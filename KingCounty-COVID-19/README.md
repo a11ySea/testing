@@ -12,3 +12,7 @@
 ## Contributors
 
 <!-- A list of everyone who joined the jam! -->
+
+## Event info
+
+The information provided from this event is for educational purposes only, and is not an accessibility audit or endorsement for legal compliance purposes.
