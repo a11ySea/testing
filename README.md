@@ -2,6 +2,14 @@
 
 Collect accessibility issues for public websites as part of A11ySea events.
 
+## Get Started
+
+If you don't have a Github account, you need to [create an account](https://github.com/join) to file issues. You will need an email address, and will be asked to create a username and password. Both the email address and password can be easily changed later.
+
+For the testing jams, the only thing you will need to do is file issues, which is done directly through the github website. We have handy issue links from each project readme (viewed by clicking on the directory for the project or website you want to participate in). All you need to do is click on the link to file a bug report or feature suggestion, and information and prompts will be pre-filled for you.
+
+For more general information about filing issues, there is a [Github help page on creating issues](https://help.github.com/en/github/managing-your-work-on-github/creating-an-issue), and a [guide to mastering issues](https://guides.github.com/features/issues/).
+
 ## General Testing Tools
 
 ### Accessibility Insights for Web

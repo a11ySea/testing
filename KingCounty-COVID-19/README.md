@@ -9,6 +9,8 @@
 - [File a bug report](https://github.com/a11ySea/testing/issues/new?assignees=&labels=bug,King+County+COVID-19&template=bug_report.md&title=King+County+COVID19+-+Bug%3A+[Bug+title])
 - [File a feature suggestion](https://github.com/a11ySea/testing/issues/new?assignees=&labels=feature,King+County+COVID-19&template=feature.md&title=King+County+COVID19+-+Feature%3A+%5Bfeature%5D)
 
+When you feel you have found all accessibility issues for a given category (e.g. that all meaningful images have a text equivalent), check it off the [accessibility issue checklist](checklist.md).
+
 ## Contributors
 
 <!-- A list of everyone who joined the jam! -->
