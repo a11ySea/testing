@@ -1,4 +1,4 @@
-# COVID-19 Public Health Site Accessibility Jam Session
+# COVID-19 Public Health Site Accessibility Jam Session (King County)
 
 - Page tested: https://www.kingcounty.gov/depts/health/communicable-diseases/disease-control/novel-coronavirus.aspx
 - Date started: 04/28/2020
