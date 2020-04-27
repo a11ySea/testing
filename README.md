@@ -2,7 +2,7 @@
 
 Collect accessibility issues for public websites as part of A11ySea events.
 
-## Tools
+## General Testing Tools
 
 ### Accessibility Insights for Web
 
@@ -24,17 +24,81 @@ Here are the keystrokes you'll use the most to interact. See [WebAIM's Keyboard 
 |Change a radio button selection|`↑` or `↓`|
 |Change a select/popup selection|`↑` or `↓`|
 
-### VoiceOver on macOS
+## Screen Reader Testing
 
-Before testing with VoiceOver on macOS:
+Before testing with a screen reader:
 
 1. Get out some headphones if you've got them.
-1. Go into **System Preferences > Accessibility > VoiceOver > Open VoiceOver Utility... > Speech** and reduce the rate to around 40 (or wherever you feel comfortable).
-1. Fire up the tutorial under **System Preferences > Accessibility > VoiceOver > Open VoiceOver Training...**.
-1. Open up **Safari** to test your page.
+1. Adjust the speaking rate in the screen reader settings until it's easy to understand
+
+### Modes in Windows screen readers
+
+All Windows screen readers use an interaction model with different "modes" that a user can switch between, and that are sometimes triggered automatically by different UI elements.
+
+In virtual mode (also called scan mode, browse mode, or virtual PC cursor mode), most keystrokes including arrow keys and alphanumeric keys are captured by the screen reader and used to navigate. They are not passed through to the underlying web page so, for example, it is not possible to type into a text field in this mode.
+
+In forms or application mode, all keystrokes are passed through to the web page. In this mode, you can type or use arrow keys to move between tab items or options in a listbox. However, you cannot use arrows or keyboard shortcuts to quickly navigate between form fields, links, headings, and so on.
+
+[More on screen reader modes](https://tink.uk/understanding-screen-reader-interaction-modes/) from Léonie Watson.
+
+### NVDA on Windows
+
+[NVDA can be downloaded from NV Access](https://www.nvaccess.org/download/). On a full keyboard, the default modifier key is `Insert`, and on a standard laptop keyboard, the default modifier key is `Capslock`.
+
+|Action|Keystroke|
+|---|---|
+|Stop reading|`Control`|
+|Start reading|`Insert` + `↓`|
+|Elements list|`Insert` + `F7`|
+|Toggle browse mode|`Insert` + `Space`|
+|Read next or previous item|`↓` or `↑`|
+|Next form field|`F`|
+|Next heading|`H`|
+|Next table|`T`|
+|Navigate cells in a table|`Ctrl` + `Alt` + `↓`/`↑`/`←`/`→`|
+
+[more NVDA commands](https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts)
+
+### Narrator on Windows
+
+Narrator can be turned on in **Settings > Ease of Access > Narrator**, or by pressing **Ctrl + Windows Key + Enter**.
+
+|Action|Keystroke|
+|---|---|
+|Stop reading|`Control`|
+|Start reading|`Capslock` + `M`|
+|Toggle scan mode|`Capslock` + `Space`|
+|Read next or previous item|`↓` or `↑`|
+|Next form field|`F`|
+|Next heading|`H`|
+|Next table|`T`|
+|Navigate cells in a table|`Ctrl` + `Alt` + `↓`/`↑`/`←`/`→`|
+
+[more Narrator commands](https://dequeuniversity.com/screenreaders/narrator-keyboard-shortcuts)
+
+### JAWS on Windows
+
+JAWS requires a license, or is limited to testing for 45 minutes before requiring a restart to continue. [JAWS can be downloaded from Freedom Scientific](https://support.freedomscientific.com/Downloads/JAWS).
+
+|Action|Keystroke|
+|---|---|
+|Stop reading|`Control`|
+|Start reading|`Insert` + `↓`|
+|Elements list|`Insert` + `F3`|
+|Toggle virtual PC cursor|`Insert` + `Z`|
+|Read next or previous item|`↓` or `↑`|
+|Next form field|`F`|
+|Next heading|`H`|
+|Next table|`T`|
+|Navigate cells in a table|`Ctrl` + `Alt` + `↓`/`↑`/`←`/`→`|
+
+[more JAWS commands](https://dequeuniversity.com/screenreaders/jaws-keyboard-shortcuts)
+
+### VoiceOver on macOS
 
 A few Voiceover tips:
 
+- Try the tutorial under **System Preferences > Accessibility > VoiceOver > Open VoiceOver Training...**.
 - **VoiceOver uses `Control` + `Option` as its main set of modifier keys.** These will be used to perform most commands for reading the page.
 - **VoiceOver sometimes puts chunks of content into what it identifies as "groups".** You can use the drill down/drill up commands to enter and exit groups. When you've reached the end of a group, or the end of a web page, you'll hear a knocking noise.
 
@@ -93,3 +157,9 @@ All TalkBack gestures use one finger. To bypass TalkBack and interact directly w
 |Activate the home button|Swipe up then left|
 
 [TalkBack gestures](https://support.google.com/accessibility/android/answer/6151827?hl=en)
+
+### Contrast tools
+
+To test Windows High Contrast Mode, go to **Settings > Ease of Access > High Contrast** and turn high contrast mode on. Check that text, links, and disabled items all have adopted the color defined in System Settings. Additionally, check that focus states and selected states are visible.
+
+[More display color modes](https://a11yproject.com/posts/operating-system-and-browser-accessibility-display-modes/)
